@@ -24,5 +24,4 @@ Upload(file,options).then(()=>{});
 ###### options.formData  {Object} [可选] [默认值：{}] 文件上传请求的参数表，每次发送都会发送此对象中的参数。
 ###### options.fileVal {String} [可选] [默认值：'file'] 设置文件上传域的name。
 
-```bash
-```
+###### options.server {String} [必填] 设置服务器上传地址。

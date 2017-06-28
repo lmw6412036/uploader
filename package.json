@@ -1,0 +1,27 @@
+{
+    "name": "lmw-uploader",
+    "version": "1.0.1",
+    "description": "uploader",
+    "main": "main.js",
+    "scripts": {
+        "dev": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lmw6412036/uploader.git"
+    },
+    "keywords": [
+        "uploader"
+    ],
+    "author": "lmw6412036",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lmw6412036/uploader/issues"
+    },
+    "homepage": "https://github.com/lmw6412036/uploader#readme",
+    "devDependencies": {
+        "auto-version": "^1.0.11",
+        "hprose": "^2.0.44"
+    }
+}

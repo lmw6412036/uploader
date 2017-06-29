@@ -12,12 +12,32 @@ npm i -S lmw-uploader
 
 ```bash
 let Upload from 'lmw-uploader'//函数返回promise对象
-Upload(file,options).then(()=>{});
+Upload(filelist, {
+          server: "",
+          fileVal: "file",
+          formData: {name: "lmw"},
+          clearQueue: false,
+          progress: (res, file) => {
+            
+          },
+          queued: (file) => {
+            
+          },
+          success: (res, file) => {
+            
+          },
+          complete: (res) => {
+            
+          },
+          error: (res) => {
+            
+          }
+        });
 ```
 
 ## API
 
-#### file 文件对象
+#### files 文件对象列表
 
 #### options Object
 ###### options.headers {Object} [可选] [默认值：{}] http 请求的header

@@ -2,7 +2,12 @@ function ajaxUploader(file, options) {
     return new Promise((resolve, reject) => {
         let xhr = new XMLHttpRequest();
         let form = new FormData();
-        form.append("file", file);
+        if(options.fileVal){
+            form.append(options.fileVal, file);
+        }else{
+            form.append("file", file);
+        }
+
         if (options.formData && Object.keys(options.formData).length > 0) {
             for (let ii in options.formData) {
                 form.append(ii, options.formData[ii]);
